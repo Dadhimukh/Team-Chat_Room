@@ -1,5 +1,5 @@
 import "./App.css";
-import image from "./user.png"
+import image from "./user.png";
 import { useEffect, useState } from "react";
 import { getDatabase, ref, push, set, onChildAdded } from "firebase/database";
 import { getAuth, signInWithPopup, GoogleAuthProvider } from "firebase/auth";
@@ -80,9 +80,7 @@ function App() {
             <i class="fab fa-google">
               <button onClick={() => googleLogin()}>Sign in With Google</button>
             </i>
-            
           </div>
-
         </div>
       )}
       {user.email ? (
