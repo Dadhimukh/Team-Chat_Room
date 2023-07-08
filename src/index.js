@@ -1,9 +1,8 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import App from "./App";
 import { initializeApp } from "firebase/app";
-
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
@@ -19,7 +18,4 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(
-    <App />
-);
-
+root.render(<App />);
