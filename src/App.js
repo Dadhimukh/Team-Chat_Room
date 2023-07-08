@@ -68,8 +68,21 @@ function App() {
   return (
     <div>
       {user.email ? null : (
-        <div className="inputName">
-          <button onClick={() => googleLogin()}>Google SignIn</button>
+        <div className="inputNameContainer">
+          {/* <button onClick={() => googleLogin()}>
+          </button> */}
+
+          <div class="google">
+            <i class="fab fa-google">
+              <button onClick={() => googleLogin()}>Sign in With Google</button>
+            </i>
+
+            <i class="fab fa-google">
+              <button onClick={() => googleLogin()}>Sign in With Google</button>
+            </i>
+            
+          </div>
+
         </div>
       )}
       {user.email ? (
