@@ -1,5 +1,6 @@
 import "./App.css";
 import image from "./user.png";
+import google from "./images/google.png"
 import { useEffect, useState } from "react";
 import { getDatabase, ref, push, set, onChildAdded } from "firebase/database";
 import { getAuth, signInWithPopup, GoogleAuthProvider } from "firebase/auth";
@@ -74,7 +75,10 @@ function App() {
 
           <div class="google">
             <i class="fab fa-google">
-              <button onClick={() => googleLogin()}>Sign in With Google</button>
+              <button onClick={() => googleLogin()}>
+                <img src={google} />
+                Sign in With Google
+              </button>
             </i>
 
             <i class="fab fa-google">
