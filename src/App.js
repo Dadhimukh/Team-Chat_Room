@@ -70,9 +70,9 @@ function App() {
     <div>
       {user.email ? null : (
         <div className="inputNameContainer">
+          <u>Chat APP</u>
           {/* <button onClick={() => googleLogin()}>
           </button> */}
-
           <div class="google">
             <i class="fab fa-google">
               <button onClick={() => googleLogin()}>
@@ -82,7 +82,10 @@ function App() {
             </i>
 
             <i class="fab fa-google">
-              <button onClick={() => googleLogin()}>Sign in With Google</button>
+              <button onClick={() => googleLogin()}>
+                <img src={google} />
+                Sign in With Google
+              </button>
             </i>
           </div>
         </div>
