@@ -74,9 +74,9 @@ body{
     font-size: large;
     width: fit-content;
 }
-/* .me .chatbox{
-  background-color: rgba(120, 35, 114, 0.934);
-} */
+.me .chatbox .msg{
+    align-self: end;
+}
 .container{
   display: flex;
   margin-bottom: 10px;
